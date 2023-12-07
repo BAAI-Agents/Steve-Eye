@@ -1,4 +1,4 @@
-# STEVE-EYE: Equiping LLM-based Embodied Agents with Visual Perception in Open Worlds 
+# Steve-Eye: Equiping LLM-based Embodied Agents with Visual Perception in Open Worlds 
 <div align="center">
 
 [[Website]](https://sites.google.com/view/steve-eye) 
@@ -24,6 +24,11 @@ Our contribution can be summarized as:
 * **Open-World Benchmarks:** We develop the following benchmarks to evaluate agent performance from a broad range of perspectives: (1) environmental visual captioning (ENV-VC); (2) foundational knowledge question answering (FK-QA); (3) skill prediction and planning (SPP).
 
 
+## Model
+```
+To be released soon
+```
+
 ## Dataset
 ```
 To be released soon
@@ -34,7 +39,7 @@ To be released soon
 </div>
 
 ## Environmental Visual Captioning (ENV-VC) Results
-| Model          | Visual Encoder | Inventory <img src="figs/icons/inventory.png" height="12pt"> | Equip <img src="figs/icons/iron-axe.png" height="12pt"> | Object in Sight <img src="figs/icons/cow.png" height="12pt"> | Life <img src="figs/icons/heart.jpg" height="12pt"> | Food <img src="figs/icons/hunger.png" height="12pt"> | Sky <img src="figs/icons/sky.png" height="12pt"> |
+| Model          | Visual Encoder | Inventory <img src="figs/icons/inventory.png" height="15pt"> | Equip <img src="figs/icons/iron-axe.png" height="15pt"> | Object in Sight <img src="figs/icons/cow.png" height="15pt"> | Life <img src="figs/icons/heart.jpg" height="15pt"> | Food <img src="figs/icons/hunger.png" height="15pt"> | Sky <img src="figs/icons/sky.png" height="15pt"> |
 |----------------|----------------|-----------|-------|-----------------|------|------|-----|
 | BLIP-2         | CLIP           | 41.6      | 58.5  | 64.7            | 88.5 | 87.9 | 57.6|
 | Llama-2-7b     | -              | -         | -     | -               | -    | -    | -   |
@@ -57,12 +62,19 @@ To be released soon
 
 
 ## Skill Planning Results
-| Model          | <img src="figs/mc/stick.png" height="12pt"> | <img src="figs/mc/crafting_table.png" height="12pt"> | <img src="figs/mc/bowl.png" height="12pt"> | <img src="figs/mc/chest.png" height="12pt"> | <img src="figs/mc/trapdoor.png" height="12pt"> | <img src="figs/mc/sign.png" height="12pt"> | <img src="figs/mc/wooden_pickaxe.png" height="12pt"> | <img src="figs/mc/furnace.png" height="12pt"> | <img src="figs/mc/stone_stairs.png" height="12pt"> | <img src="figs/mc/stone_slab.png" height="12pt"> | <img src="figs/mc/cobblestone_wall.png" height="12pt"> | <img src="figs/mc/lever.png" height="12pt"> | <img src="figs/mc/torch.png" height="12pt"> | <img src="figs/mc/stone_pickaxe.png" height="12pt"> |
+| Model          | <img src="figs/mc/stick.png" height="15pt"> | <img src="figs/mc/crafting_table.png" height="15pt"> | <img src="figs/mc/bowl.png" height="15pt"> | <img src="figs/mc/chest.png" height="15pt"> | <img src="figs/mc/trapdoor.png" height="15pt"> | <img src="figs/mc/sign.png" height="15pt"> | <img src="figs/mc/wooden_pickaxe.png" height="15pt"> | <img src="figs/mc/furnace.png" height="15pt"> | <img src="figs/mc/stone_stairs.png" height="15pt"> | <img src="figs/mc/stone_slab.png" height="15pt"> | <img src="figs/mc/cobblestone_wall.png" height="15pt"> | <img src="figs/mc/lever.png" height="15pt"> | <img src="figs/mc/torch.png" height="15pt"> | <img src="figs/mc/stone_pickaxe.png" height="15pt"> |
 |----------------|-------|----------------|------|-------|----------|------|----------------|---------|--------------|------------|------------------|-------|-------|---------------|
 | MineAgent      | 0.00  | 0.03           | 0.00 | 0.00  | 0.00     | 0.00 | 0.00           | 0.00    | 0.00         | 0.00       | 0.21             | 0.0   | 0.05  | 0.0           |
 | gpt assistant  | 0.30  | 0.17           | 0.07 | 0.00  | 0.03     | 0.00 | 0.20           | 0.00    | 0.20         | 0.03       | 0.13             | 0.00  | 0.10  | 0.00          |
 | Steve-Eye-auto | 0.30  | 0.27           | 0.37 | 0.23  | 0.20     | 0.17 | 0.26           | 0.07    | 0.13         | 0.17       | 0.20             | 0.33  | 0.00  | 0.13          |
 | Steve-Eye      | **0.40** | **0.30**    | **0.43**| **0.53**| **0.33**| **0.37**| **0.43** | **0.30**| **0.43**    | **0.47**  | **0.47**        | **0.40**| **0.13**| **0.23**  |
+
+| Model          | <img src="figs/mc/milk_bucket.png" height="15pt"> | <img src="figs/mc/wool.png" height="15pt"> | <img src="figs/mc/beef.png" height="15pt"> | <img src="figs/mc/mutton.png" height="15pt"> | <img src="figs/mc/bed.png" height="15pt"> | <img src="figs/mc/painting.png" height="15pt"> | <img src="figs/mc/carpet.png" height="15pt"> | <img src="figs/mc/item_frame.png" height="15pt"> | <img src="figs/mc/cooked_beef.png" height="15pt"> | <img src="figs/mc/cooked_mutton.png" height="15pt"> |
+|----------------|-------------|------|------|--------|-----|----------|--------|------------|-------------|---------------|
+| MineAgent      | 0.46        | 0.50 | 0.33 | 0.35   | 0.0 | 0.0      | 0.06   | 0.0        | 0.0         | 0.0           |
+| gpt assistant  | 0.57        | 0.76 | 0.43 | 0.30   | 0.00| 0.00     | 0.37   | 0.00       | 0.03        | 0.00          |
+| Steve-Eye-auto | 0.70        | 0.63 | 0.40 | 0.30   | 0.17| 0        | 0.37   | 0.03       | 0.07        | 0.00          |
+| Steve-Eye      | **0.73**    | 0.67 | **0.47** | 0.33 | **0.23** | **0.07** | **0.43** | **0.10**    | **0.17**     | **0.07**      |
 
 ## Citation
 ```
