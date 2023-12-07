@@ -11,6 +11,8 @@
 
 <div align="left">
 
+## Overview
+
 Steve-Eye is an end-to-end trained large multimodal model to address this limitation, which integrates the LLM with a visual encoder to process visual-text inputs and generate multimodal feedback. 
 We adopt a semi-automatic strategy to collect an extensive dataset comprising 850K open-world instruction pairs, enabling our model to encompass three essential functions for an agent: multimodal perception, foundational knowledge base, and skill prediction and planning.
 Our contribution can be summarized as:
@@ -21,6 +23,11 @@ Our contribution can be summarized as:
 
 * **Open-World Benchmarks:** We develop the following benchmarks to evaluate agent performance from a broad range of perspectives: (1) environmental visual captioning (ENV-VC); (2) foundational knowledge question answering (FK-QA); (3) skill prediction and planning (SPP).
 
+
+## Dataset
+```
+To be released soon
+```
 
 <div align="center">
     <img src="figs/steve-eye.png" />
@@ -50,7 +57,12 @@ Our contribution can be summarized as:
 
 
 ## Skill Planning Results
-
+| Model          | <img src="figs/mc/stick.png" height="12pt"> | <img src="figs/mc/crafting_table.png" height="12pt"> | <img src="figs/mc/bowl.png" height="12pt"> | <img src="figs/mc/chest.png" height="12pt"> | <img src="figs/mc/trapdoor.png" height="12pt"> | <img src="figs/mc/sign.png" height="12pt"> | <img src="figs/mc/wooden_pickaxe.png" height="12pt"> | <img src="figs/mc/furnace.png" height="12pt"> | <img src="figs/mc/stone_stairs.png" height="12pt"> | <img src="figs/mc/stone_slab.png" height="12pt"> | <img src="figs/mc/cobblestone_wall.png" height="12pt"> | <img src="figs/mc/lever.png" height="12pt"> | <img src="figs/mc/torch.png" height="12pt"> | <img src="figs/mc/stone_pickaxe.png" height="12pt"> |
+|----------------|-------|----------------|------|-------|----------|------|----------------|---------|--------------|------------|------------------|-------|-------|---------------|
+| MineAgent      | 0.00  | 0.03           | 0.00 | 0.00  | 0.00     | 0.00 | 0.00           | 0.00    | 0.00         | 0.00       | 0.21             | 0.0   | 0.05  | 0.0           |
+| gpt assistant  | 0.30  | 0.17           | 0.07 | 0.00  | 0.03     | 0.00 | 0.20           | 0.00    | 0.20         | 0.03       | 0.13             | 0.00  | 0.10  | 0.00          |
+| Steve-Eye-auto | 0.30  | 0.27           | 0.37 | 0.23  | 0.20     | 0.17 | 0.26           | 0.07    | 0.13         | 0.17       | 0.20             | 0.33  | 0.00  | 0.13          |
+| Steve-Eye      | **0.40** | **0.30**    | **0.43**| **0.53**| **0.33**| **0.37**| **0.43** | **0.30**| **0.43**    | **0.47**  | **0.47**        | **0.40**| **0.13**| **0.23**  |
 
 ## Citation
 ```
