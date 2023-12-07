@@ -22,7 +22,9 @@ Our contribution can be summarized as:
 * **Open-World Benchmarks:** We develop the following benchmarks to evaluate agent performance from a broad range of perspectives: (1) environmental visual captioning (ENV-VC); (2) foundational knowledge question answering (FK-QA); (3) skill prediction and planning (SPP).
 
 
-![](figs/plan4mc.png)
+<div align="center">
+    <img src="figs/steve-eye.png" />
+</div>
 
 ## Environmental Visual Captioning (ENV-VC) Results
 | Model          | Visual Encoder | Inventory <img src="figs/icons/inventory.png" height="12pt"> | Equip <img src="figs/icons/iron-axe.png" height="12pt"> | Object in Sight <img src="figs/icons/cow.png" height="12pt"> | Life <img src="figs/icons/heart.jpg" height="12pt"> | Food <img src="figs/icons/hunger.png" height="12pt"> | Sky <img src="figs/icons/sky.png" height="12pt"> |
@@ -34,7 +36,7 @@ Our contribution can be summarized as:
 | Steve-Eye-13b  | VQ-GAN         | 91.1      | 79.6  | 89.8            | 92.7 | 90.8 | 72.7|
 | Steve-Eye-13b  | CLIP           | **92.5**  | **82.8** | **92.1**     | **93.1** | **91.5** | **73.8** |
 
-## (FK-QA) Results
+## Foundational Knowledge Question Answering (FK-QA) Results
 |               | Scoring    |         |        |          | Accuracy |       |
 |---------------|------------|---------|--------|----------|----------|-------|
 |               | Wiki Page  | Wiki Table | Recipe | TEXT All | TEXT    | IMG   |
