@@ -25,14 +25,12 @@ Our contribution can be summarized as:
 
 
 ## Model
-```
+
 To be released soon
-```
+
 
 ## Dataset
-```
 To be released soon
-```
 
 <div align="center">
     <img src="figs/steve-eye.png" />
